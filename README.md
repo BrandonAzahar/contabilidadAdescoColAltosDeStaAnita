@@ -39,6 +39,7 @@ Abre el Símbolo del sistema como Administrador
 Ejecuta:
 
 bash
+mysql -u root -p < create_database.sql
 
 1
 Ingresa tu contraseña de MySQL cuando se te pida (o pulsa Enter si no tienes contraseña) 🔑
