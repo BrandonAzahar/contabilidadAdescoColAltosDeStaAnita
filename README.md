@@ -1,39 +1,36 @@
-# ADESCO Accounting System - Setup Instructions
+Sistema Contable ADESCO – Instrucciones de Configuración 🛠️
 
-## Prerequisites
-- XAMPP with Apache and MySQL installed and running
-- PHP and MySQL in your system PATH variables
+✅ Requisitos previos
+XAMPP con Apache 🌐 y MySQL 🗄️ instalados y en ejecución
+PHP ⚙️ y MySQL 🗄️ agregados a las variables de entorno PATH del sistema
+📋 Pasos de configuración
+📁 Coloca la carpeta adesco_accounting en el directorio htdocs de XAMPP
+Ubicación habitual: C:\xampp\htdocs\
+🔽 Inicia el Panel de Control de XAMPP
+Haz clic en Iniciar para los servicios:
+Apache 🌐
+MySQL 🗄️
+🗃️ Crea la base de datos
+Opción 1: Usar phpMyAdmin 🖥️
+Ve a: http://localhost/phpmyadmin
+Crea una nueva base de datos llamada adesco_accounting
+Importa el archivo create_database.sql 📤
+Opción 2: Usar la línea de comandos de MySQL 💻
 
-## Setup Steps
-
-1. Place the `adesco_accounting` folder in your XAMPP `htdocs` directory:
-   - Usually located at `C:\xampp\htdocs\`
-
-2. Start XAMPP Control Panel:
-   - Start Apache and MySQL services
-
-3. Create the database:
-   - Option 1: Use phpMyAdmin
-     - Go to http://localhost/phpmyadmin
-     - Create a new database named `adesco_accounting`
-     - Import the `create_database.sql` file
-   
-   - Option 2: Use MySQL command line
-     - Open Command Prompt as Administrator
-     - Run: `mysql -u root -p < create_database.sql`
-     - Enter your MySQL password when prompted (or press Enter if no password is set)
-
-4. Access the application:
-   - Open your browser
-   - Go to http://localhost/adesco_accounting/
-
-## Troubleshooting
-- If you get connection errors, make sure MySQL is running in XAMPP
-- If the page doesn't load, ensure Apache is running in XAMPP
-- If you have issues with the database, verify the database name and credentials in config.php
-
-## Features
-- View and manage accounting entries (entradas and salidas)
-- Automatic calculation of current balance
-- Add, edit, and delete entries
-- Responsive Bootstrap UI
+Abre el Símbolo del sistema como Administrador
+Ejecuta:
+bash
+1
+Ingresa tu contraseña de MySQL cuando se te pida (o pulsa Enter si no tienes contraseña) 🔑
+🚀 Accede a la aplicación
+Abre tu navegador 🌍
+Ve a: http://localhost/adesco_accounting/
+🚨 Solución de problemas
+❌ Error de conexión? → Asegúrate de que MySQL 🗄️ esté en ejecución en XAMPP
+📄 Página no carga? → Verifica que Apache 🌐 esté activo
+🔄 Problemas con la base de datos? → Revisa el nombre de la BD y las credenciales en config.php ⚙️
+✨ Características principales
+👀 Ver y gestionar asientos contables (entradas 💰 y salidas 💸)
+📊 Cálculo automático del saldo actual
+➕ Agregar, ✏️ editar y 🗑️ eliminar asientos
+📱 Interfaz responsiva con Bootstrap 🎨
